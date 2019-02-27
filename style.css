@@ -1,0 +1,35 @@
+.white-row-zero, .black-row-zero, .white-row-one, .black-row-one {
+  display: flex;
+  width: 500px;
+  justify-content: space-evenly;
+}
+
+
+.main-board {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  border: 10px solid red;
+}
+
+.white-square, .black-square {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+}
+
+.white-square {
+  background-color: lightgoldenrodyellow;
+}
+
+.black-square {
+  background-color: grey;
+}
+
+.start {
+  background-color: greenyellow;
+}
+
+.clear {
+  background-color: red;
+}
