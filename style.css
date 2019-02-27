@@ -1,4 +1,4 @@
-.white-row-zero, .black-row-zero, .white-row-one, .black-row-one {
+.white-row-one, .black-row-one, .white-row-two, .black-row-two {
   display: flex;
   width: 500px;
   justify-content: space-evenly;
