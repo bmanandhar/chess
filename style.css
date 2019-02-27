@@ -9,6 +9,7 @@
   width: 500px;
   height: 500px;
   display: flex;
+  flex-direction: column-reverse;
   border: 10px solid red;
 }
 
@@ -24,6 +25,10 @@
 
 .black-square {
   background-color: grey;
+}
+
+.row-1, .row-2, .row-3, .row-4, .row-5, .row-6, .row-7, .row-8 {
+  display:flex;
 }
 
 .start {

@@ -16,24 +16,45 @@ $(document).ready(function(){
       $('.white-row-one').append(`<img src="${men_white[i]}" style="width:35px; height:35px;">`);
       $('.black-row-one').append(`<img src="${men_black[i]}" style="width:35px; height:35px;">`);
     }
-    
-  for (let i=col.length-1; i>=0; i--){
-    for (let j=row.length-1; j>=0; j--){
-      if ((i+j)%2===0){
-        $(`.row-${i}`).append(
-         `<div class="white-square">
-            <div class="${col[i]}${row[j]}">
-              <p>${col[i]}${row[j]}</p>
-            </div>
-          </div>`)
-      } else {
-      $(`.row-${i}`).append(
-        `<div class="black-square">
-          <div class="${col[i]}${row[j]}">
-            <p>${col[i]}${row[j]}</p>
+    for (let i=7; i>=0; i--){
+      for (let j=0; j<=7; j++){
+        if ((i+j)%2===0){
+        $(`.row-${i+1}`).append(
+          `<div class="black-square">
+            <p>${col[j]}${row[i]}</p>
           </div>
-        </div>`)        
+      `)
+      } else {
+        $(`.row-${i+1}`).append(
+          `<div class="white-square">
+            <p>${col[j]}${row[i]}</p>
+          </div>
+      `)
+
       }
     }
-  }  
+  }
+
+
+
+    
+  // for (let i=col.length-1; i>=0; i--){
+  //   for (let j=row.length-1; j>=0; j--){
+  //     if ((i+j)%2===0){
+  //       $(`.row-${i}`).append(
+  //        `<div class="white-square">
+  //           <div class="${col[i]}${row[j]}">
+  //             <p>${col[i]}${row[j]}</p>
+  //           </div>
+  //         </div>`)
+  //     } else {
+  //     $(`.row-${i}`).append(
+  //       `<div class="black-square">
+  //         <div class="${col[i]}${row[j]}">
+  //           <p>${col[i]}${row[j]}</p>
+  //         </div>
+  //       </div>`)        
+  //     }
+  //   }
+  // }  
 });
